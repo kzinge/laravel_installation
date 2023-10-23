@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins";
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background: transparent;
+}
+
+.dark-mode {
+    background-color: #1d1e25;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.logo {
+    width: 180px;
+    margin-top: 1rem;
+}
+.itens {
+    text-decoration: none;
+    color: black;
+}
+.aviso {
+    background-color: #f7331e;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.aviso img {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+.aviso a{
+    color: white;
+}
+
+.container{
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background: rgb(165,173,166);
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 8%);
+    width: 25%;
+    padding-left: 50px;
+}
+
+.lista_menu_respon {
+    display: none;
+}
+
+.itens_menu {
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+#info {
+    display: block;
+    border: dashed 1px rgb(187, 187, 187);
+    font-size: 0.75rem;
+    padding: 1rem 0.75rem 0.5rem 0.75rem;
+    line-height: 2;
+    width: 180px;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+
+}
+
+#info span a {
+    color: #eb4432;
+}
+
+#info span h4 {
+    color: #535353;
+    margin-left: 0;
+}
+
+main {
+    display: inline-flex;
+    width: 75%;
+    flex-direction: column;
+
+}
+
+.conteudo {
+    padding: 0 6rem 0 6rem;
+    width: 100%;
+}
+
+.respon {
+    display: none;
+}
+
+.logorespon {
+    width: 180px;
+
+}
+
+.pesquisa {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#lupa {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#pesquisaId {
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    color: black;
+    margin-top: 1.2rem;
+}
+
+.direito {
+    display: flex;
+    flex-direction: row;
+}
+
+#botao, #label_menu {
+    display: none;
+}
+
+.botoes {
+    display: flex;
+}
+
+.versions{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.versions label {
+    font-size: 13px;
+    font-weight: light;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+#versionId {
+    font-size: 12pt;
+    font-weight: lighter;
+    outline: none;
+    border: none;
+
+
+}
+
+.mode {
+    display: flex;
+    align-self: flex-end;
+    margin: 0 1rem 0.2rem 1.5rem;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.linha {
+    background-color: rgb(180, 180, 180);
+    opacity: 0.3;
+    height: 1px;
+    width: 100%;
+}
+
+/* Seção 1 */
+
+.installation {
+    margin: 4rem 0 2rem 0;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+#main_info {
+    font-size: 14px;
+}
+
+.itens_info {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+
+.itens_info ol {
+    font-weight: normal;
+    margin: 0.7rem 0 0 1.2rem;
+}
+.itens_info ol li {
+    margin-bottom: 0.7rem;
+}
+li span {
+    color: #f7331e;
+}
+
+/* Seção 2 */
+
+section {
+    width: 88%;
+}
+
+.title {
+    margin: 3rem 0 1rem 0;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.title span {
+    color: #f7331e;
+    opacity: 0.7;
+}
+
+.textos p {
+    font-size: 16px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+    text-align: left;
+}
+
+p a {
+    color: #f7331e;
+}
+
+p code {
+    font-size: 11pt;
+    padding: 2px;
+    background-color: aqua;
+    color: #ca473f;
+    background-color: #fbfbfd;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.extra {
+    display: flex;
+    background-color: transparent;
+    padding: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    width: 100%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 17px 15px 0px rgba(0,0,0,0.1);
+    border-radius: 7px;
+
+}
+
+.extra p {
+    margin: 0;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.extra img {
+    width: 100px;
+    height: 80px;
+}
+
+.sub {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.sub span {
+    color: #f7331e;
+    font-size: 28px;
+    opacity: 0.7;
+}
+
+h4 {
+    margin-left: 2rem;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.codigo{
+    background-color: #292D3E;
+    padding: 1rem 1rem 0 1rem;
+    margin-left: 2rem;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#att_codigo {
+    width: 50vw;
+}
+
+.codigo span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10pt;
+    color: #bfc7d5;
+    margin-bottom: 1rem;
+}
+.green_span span {
+    color: #8af532;
+    background-color: rgba(60, 255, 11, 0.08);
+    margin-bottom: 0;
+    padding: 5px;
+    display: flex;
+}
+.red_span span {
+    display: flex;
+    flex-direction: column;
+    color: #eb4432;
+    background-color: rgba(255, 11, 11, 0.08);
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.red_span:last-child {
+    margin-bottom: 1rem;
+}
+
+.next_steps {
+    margin: 2rem;
+    color: #f7331e;
+    font-size: 14px;
+    
+}
+
+.next_steps li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* rodapé */
+
+footer{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logolaravel img {
+    width: 70px;
+    height: 70px;
+    margin-left: 3.5rem;
+    cursor: pointer;
+
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    font-size: 12px;
+}
+
+ul h6 {
+    font-size: 12px;
+}
+
+.rodape_p {
+    width: 25%;
+    text-align: justify;
+}
+
+.rodape ul li {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.linha_rodape {
+    background-color: rgb(180, 180, 180);
+    opacity: 0.3;
+    height: 1px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer span {
+    font-size: 9pt;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1030px) {
+
+    .respon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .logorespon {
+        display: flex;
+    }
+
+    .botoesrespon {
+        display: flex;
+        align-items: center;
+        right: 0;
+    }
+
+    .mode_respon {
+        width: 22px;
+        height: 22px;
+        margin-right: 1rem;
+        margin-left: 2rem;
+
+    }
+
+    
+    .aviso{
+        display: none;
+    }
+
+    .botoes{
+        display: none;
+    }
+
+    .lista_menu{
+        display: none;
+    }
+
+    aside {
+        display: none;
+        width: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .conteudo {
+        padding-left: 3rem;
+    }
+    
+
+    .pesquisa {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    #label_menu {
+        display: block;
+        color: #f7331e;
+        font-weight: bolder;
+        font-size: 16pt;
+    }
+
+    #label_menu:hover {
+        color: #ca473f;
+    }
+
+    #botao:checked ~ .lista_menu_respon {
+        display: block;
+        position: absolute;
+        top: 104px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(180, 180, 180);
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+
+    #botao:checked ~ .lista_menu_respon li {
+        margin-bottom: 1rem;
+    }
+
+    #botao:checked ~ #label_menu {
+        color: #ca473f;
+    }
+
+    .itens:hover{
+        color: #eb4432;
+        transition: 400ms;
+    }
+
+    .extra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra p {
+        margin: 1rem 2rem;
+    }
+
+    .extra img {
+        height: 100px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape_p {
+        width: 80%;
+    }
+
+    ul h6 {
+        margin-top: 1rem;
+    }
+
+    .logolaravel img {
+        margin-left: 0;
+    }
+
+}
