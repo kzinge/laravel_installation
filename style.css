@@ -537,4 +537,8 @@ footer span {
         margin-left: 0;
     }
 
+    .codigo {
+        overflow-x: scroll;
+    }
+
 }
